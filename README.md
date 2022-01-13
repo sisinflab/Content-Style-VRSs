@@ -1,6 +1,6 @@
 # Leveraging Content-Style Item Representation for Visual Recommendation
 
-This is the official GitHub repository for the paper **Leveraging Content-Style Item Representation for Visual Recommendation**.
+This is the official GitHub repository for the paper **Leveraging Content-Style Item Representation for Visual Recommendation**, accepted as short paper at the 44th European Conference on Information Retrieval (ECIR 2022).
 
 The proposed implementation extends the Python framework **Elliot**. While you can refer to the official [GitHub page](https://github.com/sisinflab/elliot) and the [documentation](https://elliot.readthedocs.io/en/latest/) for detailed information on how to run the framework, please use the scripts from the extended version here to reproduce all the results shown in the paper (both for the proposed model and the baselines). 
 

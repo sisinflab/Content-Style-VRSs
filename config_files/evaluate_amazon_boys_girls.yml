@@ -1,0 +1,169 @@
+experiment:
+  data_config:
+    strategy: fixed
+    dataloader: VisualLoader
+    dataset_path: ../data/{0}/trainingset.tsv
+    train_path: ../data/{0}/trainingset.tsv
+    validation_path: ../data/{0}/validationset.tsv
+    test_path: ../data/{0}/testset.tsv
+    side_information:
+      visual_features: ../data/{0}/original/cnn_features_resnet50_avg_pool/
+      visual_pca_features: ../data/{0}/original/cnn_features_resnet50_avg_pool_pca128/
+      visual_feat_map_features: ../data/{0}/original/cnn_features_resnet50_conv5_block3_out/
+      visual_color_features: ../data/{0}/original/color_features_bins8/
+      visual_class_features: ../data/{0}/original/cnn_features_resnet50_avg_pool_pca128/
+      images_src_folder: ../data/{0}/original/images/
+      shapes_src_folder: ../data/{0}/original/shapes/
+      output_image_size: (224,224)
+      output_shape_size: (224,224)
+      item_mapping: ../data/{0}/visual_feats.tsv
+  dataset: amazon_boys_girls
+  top_k: 20
+  evaluation:
+    cutoffs: [20]
+    simple_metrics: [HR, nDCG, ItemCoverage, EFD, Gini]
+    relevance_threshold: 1
+    paired_ttest: True
+  gpu: 0
+  models:
+    VBPR:
+      meta:
+        hyper_opt_alg: grid
+        validation_rate: 10
+        verbose: True
+        save_weights: True
+        save_recs: True
+        validation_metric: HR@100
+        restore: True
+      lr: [ 0.0001, 0.001, 0.01 ]
+      epochs: 100 # As in NeuMF Code
+      factors: 128
+      factors_d: 20
+      batch_size: 128
+      batch_eval: 4096
+      l_w: [ 0.00001, 0.001 ]
+      l_b: 0
+    FashionExpl:
+      meta:
+        hyper_opt_alg: grid
+        validation_rate: 1
+        verbose: True
+        save_weights: True
+        save_recs: True
+        validation_metric: HR@100
+        restore: True
+      lr: [ 0.0001, 0.001, 0.01 ]
+      epochs: 100 # As in NeuMF Code
+      factors: 128 # must be fixed to 128
+      batch_size: 128
+      batch_eval: 1024
+      l_w: [ 0.00001, 0.001 ]
+      cnn_channels: 32
+      cnn_kernels: 3
+      cnn_strides: 1
+      mlp_cnn: (64, 1)
+      mlp_color: (64, 32, 1)
+      mlp_att: (64, 32, 1)
+      mlp_out: (64, 32, 1)
+      dropout: 0.5
+      temperature: [ 1.0, 10.0 ]
+      att_feat_agg: [ concatenation, addition, multiplication ]
+      out_feat_agg: [ addition, multiplication ]
+      sampler: pairwise
+    DVBPR:
+      meta:
+        hyper_opt_alg: grid
+        validation_rate: 1
+        verbose: True
+        save_weights: True
+        save_recs: True
+        validation_metric: HR@100
+        restore: True
+      lr: [ 0.0001, 0.001, 0.01 ]
+      epochs: 20
+      factors: 128
+      batch_size: 128
+      batch_eval: 1024
+      lambda_1: 0.001
+      lambda_2: 1.0
+    ACF:
+      meta:
+        hyper_opt_alg: grid
+        validation_rate: 10
+        verbose: True
+        save_weights: True
+        save_recs: True
+        validation_metric: HR@100
+        restore: True
+      lr: [ 0.0001, 0.001, 0.01 ]
+      epochs: 100 # As in NeuMF Code
+      factors: 128
+      batch_size: 1
+      l_w: [ 0.00001, 0.001]
+      layers_component: (64, 1)
+      layers_item: (64, 1)
+    DeepStyle:
+      meta:
+        hyper_opt_alg: grid
+        validation_rate: 10
+        verbose: True
+        save_weights: True
+        save_recs: True
+        validation_metric: HR@100
+        restore: True
+      lr: [0.0001, 0.001, 0.01]
+      epochs: 100 # As in NeuMF Code
+      factors: 128
+      batch_size: 128
+      batch_eval: 4096
+      l_w: [0.00001, 0.001]
+    VNPR:
+      meta:
+        hyper_opt_alg: grid
+        validation_rate: 10
+        verbose: True
+        save_weights: True
+        save_recs: True
+        validation_metric: HR@100
+        restore: True
+      lr: [0.0001, 0.001, 0.01]
+      epochs: 100 # As in NeuMF Code
+      mf_factors: 128
+      batch_size: 128
+      batch_eval: 1024
+      mlp_hidden_size: (128, 64, 1)
+      prob_keep_dropout: 0.5
+      l_w: [0.00001, 0.001]
+    BPRMF_batch:
+      meta:
+        hyper_opt_alg: grid
+        validation_rate: 10
+        verbose: True
+        save_weights: True
+        save_recs: False
+        validation_metric: HR@100
+        restore: True
+      lr: [ 0.0001, 0.001, 0.01 ]
+      epochs: 100 # As in NeuMF Code
+      batch_size: 128
+      factors: 128
+      l_w: [ 0.00001, 0.001 ]
+      l_b: 0
+    NeuMF:
+      meta:
+        hyper_opt_alg: grid
+        validation_rate: 10
+        verbose: True
+        save_weights: True
+        save_recs: False
+        validation_metric: HR@100
+        restore: True
+      lr: [ 0.0001, 0.001, 0.01 ]
+      epochs: 100 # As in NeuMF Code
+      batch_size: 128
+      mf_factors: 64
+      mlp_factors: 64
+      mlp_hidden_size: (128, 96, 64)
+      prob_keep_dropout: 0.5
+      is_mf_train: True
+      is_mlp_train: True

@@ -80,7 +80,7 @@ After downloading the zip files pointed by the table links, you will have access
 - the mapping between users and items ids and their original Amazon unique codes
 - the extracted visual features to train and evaluate the baselines and the proposed model
 
-**Disclaimer** As we do not own the dataset, and we did not scrape it, we do not release the original product images (you would need them to train DVBPR, or to extract each of the visual features). Once again, we encourage you to refer to the [official link](https://jmcauley.ucsd.edu/data/amazon/) to get to the full dataset, and use the user and item mapping we provided to download again the original product images, if needed.
+**Disclaimer.** As we do not own the dataset, and we did not scrape it, we do not release the original product images (you would need them to train DVBPR, or to extract each of the visual features). Once again, we encourage you to refer to the [official link](https://jmcauley.ucsd.edu/data/amazon/) to get to the full dataset, and use the user and item mapping we provided to download again the original product images, if needed.
 
 ## Baselines and Our Method
 You may find the scripts for our proposed method at the path ```./elliot/recommender/custom/```, while the corresponding data samplers can be found at the path ```./elliot/dataset/dataloaders/```.

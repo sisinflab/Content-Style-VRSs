@@ -63,6 +63,12 @@ where the parameters ```type_experiment``` and ```dataset``` may be set using th
 This will train or test all the models on the considered datasets, following the configuration files in ```./config_files/``` (where you can find a detailed overview on all explored values for all the hyperparameters). Note that, the ```type_experiment``` field has to be completed with the name of the configuration file without the dataset name, e.g., if the file is named ```evaluate_amazon_men.yml```, then ```type_experiment: evaluate```. The configuration files ```evaluate_amazon_men.yml``` and ```evaluate_amazon_boys_girls.yml``` allow to reproduce all results.
 
 ## Datasets
+
+|       Dataset      |   # Users   | # Items   |  # Interactions   |
+| ------------------ | ------------------ | ------------------ | ------------------ |
+|     Amazon Boys & Girls*     |  1,425 | 5,019 | 9,213  |
+|    Amazon Men*    | 16,278 | 31,750 |  113,106  |
+
 At this anonymized [link](https://drive.google.com/file/d/1v1XeDlpYAwod3jfIutD9zS_ct9Q3aTgB/view?usp=sharing) you may find the datasets adopted in the paper. For each item image, we have already provided the extracted visual features required for all visual-based baselines and our proposed model. Please, just put the downloaded datasets into the ```./data/``` folder.
 
 ## Baselines and Our Method

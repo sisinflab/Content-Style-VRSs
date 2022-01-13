@@ -76,4 +76,4 @@ We randomly initialize the model parameters of all tested methods with a Gaussia
 * Yashar Deldjoo (yashar.deldjoo@poliba.it)
 * Tommaso Di Noia (tommaso.dinoia@poliba.it)
 * **Daniele Malitesta (daniele.malitesta@poliba.it)**
-* Felice Antonio Merra (felice.merra@poliba.it)
+* Felice Antonio Merra (felmerra@amazon.de)

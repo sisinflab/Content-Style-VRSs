@@ -24,7 +24,7 @@ If you want to use our model as baseline in your paper, please remember to cite 
 ```
 
 ## Disclaimer \#1
-The code for the proposed model and the baselines was implemented in **Elliot**. If you want to reproduce the exact same results described in the paper, please consider this essential version of the framework. However, please, refer to the most updated version of the official [GitHub page](https://github.com/sisinflab/elliot) and the [documentation](https://elliot.readthedocs.io/en/latest/) for detailed information on how to run the framework.
+The codes for the proposed model and the baselines were implemented in **Elliot**. If you want to reproduce the exact same results described in the paper, please consider this essential version of the framework. However, please, refer to the most updated version of the official [GitHub page](https://github.com/sisinflab/elliot) and the [documentation](https://elliot.readthedocs.io/en/latest/) for detailed information on how to run the framework.
 
 ## Disclaimer \#2
 We are working to integrate the proposed model within the most recent version of Elliot, so that we can take advantage of all the new introduced features. When this happens, we will remove every script from here, and directly link to Elliot.

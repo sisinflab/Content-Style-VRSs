@@ -33,7 +33,7 @@ We are working to integrate the proposed model within the most recent version of
 - [Requirements](#requirements)
 - [Training and Evaluation](#training-and-evaluation)
 - [Datasets](#datasets)
-- [Baselines and Our Method](#our-method)
+- [Baselines and Our Method](#baselines-and-our-method)
 - [Reproducibility Details](#reproducibility-details)
 - [Contacts](#contacts)
 

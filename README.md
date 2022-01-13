@@ -83,6 +83,25 @@ After downloading the zip files pointed by the table links, you will have access
 **Disclaimer.** As we do not own the dataset, we decided not to release the original product images (you would need them to train DVBPR, or to extract each of the visual features). Once again, we encourage you refer to the [official link](https://jmcauley.ucsd.edu/data/amazon/) to get to the full dataset, and use the item mapping we provided to download again the original product images, if needed.
 
 ## Baselines and Our Method
+
+**Traditional Collaborative Filtering**
+
+|       Model      |    Paper  |
+| ------------------ | ------------------ |
+|     BPRMF     | [Rendle et al.](https://arxiv.org/pdf/1205.2618.pdf) |
+|     NeuMF   | [He et al.](https://arxiv.org/pdf/1708.05031.pdf) |
+
+
+**Visual-Based Collaborative Filtering**
+
+|       Model      |    Paper  |
+| ------------------ | ------------------ |
+|     VBPR     | [He and McAuley](https://arxiv.org/pdf/1510.01784.pdf) |
+|     DeepStyle   | [Liu et al.](http://www.shuwu.name/sw/DeepStyle.pdf) |
+|     DVBPR   | [Kang et al.](https://arxiv.org/pdf/1711.02231.pdf) |
+|     ACF | [Chen et al.](https://www.comp.nus.edu.sg/~xiangnan/papers/sigir17-AttentiveCF.pdf) | 
+|     VNPR | [Niu et al.](https://people.engr.tamu.edu/caverlee/pubs/niu18wsdm.pdf) |
+
 You may find the scripts for our proposed method at the path ```./elliot/recommender/custom/```, while the corresponding data samplers can be found at the path ```./elliot/dataset/dataloaders/```.
 
 ## Reproducibility Details

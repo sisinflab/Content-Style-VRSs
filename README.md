@@ -20,7 +20,6 @@ If you want to use our model as baseline in your paper, please remember to cite 
   year         = "2022",
   publisher    = "Springer",
   url          = "http://sisinflab.poliba.it/Publications/2022/DDMM22"
-
 }
 ```
 

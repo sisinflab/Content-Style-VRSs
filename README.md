@@ -9,7 +9,7 @@ This is the official GitHub repository for the paper [**Leveraging Content-Style
 **Authors:** Yashar Deldjoo, Tommaso Di Noia, Daniele Malitesta*, Felice Antonio Merra.
 <br>\**corresponding author*
 
-If you want to use our model as baseline in your paper, please remember to cite our paper:
+If you want to use our model as baseline in your paper, please remember to cite us:
 
 ```
 @misc{DDMM22,

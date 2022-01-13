@@ -71,7 +71,16 @@ This will train or test all the models on the considered datasets, following the
 
 \* https://jmcauley.ucsd.edu/data/amazon/
 
-At this anonymized [link](https://drive.google.com/file/d/1v1XeDlpYAwod3jfIutD9zS_ct9Q3aTgB/view?usp=sharing) you may find the datasets adopted in the paper. For each item image, we have already provided the extracted visual features required for all visual-based baselines and our proposed model. Please, just put the downloaded datasets into the ```./data/``` folder.
+The two adopted datasets are sub-categories of Amazon's product category *Clothing, Shoes and Jewelry*. We used the 2014 version (refer to the official link above). As for the filtering phase, we considered only the interactions recorded after 2010, and filtered out items and users with less than 5 interactions (applying the 5-core techniques on items and on users).
+
+After downloading the zip files pointed by the table links, you will have access to the following data:
+
+- train, validation, and test sets
+- a file to map visual features to items (to be removed when the code is integrated within the new version of Elliot)
+- the mapping between users and items ids and their original Amazon unique codes
+- the extracted visual features to train and evaluate the baselines and the proposed model
+
+**Disclaimer** As we do not own the dataset, and we did not scrape it, we do not release the original product images (you would need them to train DVBPR, or to extract each of the visual features). Once again, we encourage you to refer to the [official link](https://jmcauley.ucsd.edu/data/amazon/) to get to the full dataset, and use the user and item mapping we provided to download again the original product images, if needed.
 
 ## Baselines and Our Method
 You may find the scripts for our proposed method at the path ```./elliot/recommender/custom/```, while the corresponding data samplers can be found at the path ```./elliot/dataset/dataloaders/```.

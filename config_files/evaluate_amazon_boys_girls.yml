@@ -20,7 +20,7 @@ experiment:
   dataset: amazon_boys_girls
   top_k: 100
   evaluation:
-    cutoffs: [20]
+    cutoffs: [20, 100]
     simple_metrics: [HR, nDCG, ItemCoverage, EFD, Gini]
     relevance_threshold: 1
     paired_ttest: True

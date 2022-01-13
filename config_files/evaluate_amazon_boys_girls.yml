@@ -18,7 +18,7 @@ experiment:
       output_shape_size: (224,224)
       item_mapping: ../data/{0}/visual_feats.tsv
   dataset: amazon_boys_girls
-  top_k: 20
+  top_k: 100
   evaluation:
     cutoffs: [20]
     simple_metrics: [HR, nDCG, ItemCoverage, EFD, Gini]

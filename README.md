@@ -109,7 +109,7 @@ That being said, you may refer to the two configuration files:
 - [Amazon Boys & Girls](https://github.com/sisinflab/Content-Style-VRSs/blob/master/config_files/evaluate_amazon_boys_girls.yml)
 - [Amazon Men](https://github.com/sisinflab/Content-Style-VRSs/blob/master/config_files/evaluate_amazon_men.yml)
 
-to have a detailed overview on all adopted hyperparameters, evaluation settings and files to run the experiments.
+to have a detailed overview on all adopted hyperparameters, evaluation settings, and files to run the experiments.
 
 ## Contacts
 * Yashar Deldjoo (yashar.deldjoo@poliba.it)

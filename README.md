@@ -69,6 +69,8 @@ This will train or test all the models on the considered datasets, following the
 |     Amazon Boys & Girls*     |  1,425 | 5,019 | 9,213  |
 |    Amazon Men*    | 16,278 | 31,750 |  113,106  |
 
+\* https://jmcauley.ucsd.edu/data/amazon/
+
 At this anonymized [link](https://drive.google.com/file/d/1v1XeDlpYAwod3jfIutD9zS_ct9Q3aTgB/view?usp=sharing) you may find the datasets adopted in the paper. For each item image, we have already provided the extracted visual features required for all visual-based baselines and our proposed model. Please, just put the downloaded datasets into the ```./data/``` folder.
 
 ## Baselines and Our Method

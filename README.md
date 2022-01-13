@@ -27,7 +27,7 @@ If you want to use our model as baseline in your paper, please remember to cite 
 The code for the proposed model and the baselines was implemented in **Elliot**. If you want to reproduce the exact same results described in the paper, please consider this essential version of the framework. However, please, refer to the most updated version of the official [GitHub page](https://github.com/sisinflab/elliot) and the [documentation](https://elliot.readthedocs.io/en/latest/) for detailed information on how to run the framework.
 
 ## Disclaimer \#2
-We are working to integrate the proposed model within the most recent version of Elliot so that we can take advantage of all the new introduced features. When this happens, we will remove every script from here, and directly link to Elliot.
+We are working to integrate the proposed model within the most recent version of Elliot, so that we can take advantage of all the new introduced features. When this happens, we will remove every script from here, and directly link to Elliot.
 
 ### Dataset
 At this anonymized [link](https://drive.google.com/file/d/1v1XeDlpYAwod3jfIutD9zS_ct9Q3aTgB/view?usp=sharing) you may find the datasets adopted in the paper. For each item image, we have already provided the extracted visual features required for all visual-based baselines and our proposed model. Please, just put the downloaded datasets into the ```./data/``` folder.

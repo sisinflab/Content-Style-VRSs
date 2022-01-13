@@ -12,7 +12,7 @@ This is the official GitHub repository for the paper [**Leveraging Content-Style
 If you want to use our model as baseline in your paper, please remember to cite our paper:
 
 ```
-@ToAppearInProceedings{DDMM22,
+@misc{DDMM22,
   author       = "Deldjoo, Yashar and Di Noia, Tommaso and Malitesta, Daniele and Merra, Felice Antonio",
   title        = "Leveraging Content-Style Item Representation for Visual Recommendation",
   booktitle    = "44th European Conference on Information Retrieval",

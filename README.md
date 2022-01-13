@@ -99,7 +99,7 @@ After downloading the zip files pointed by the table links, you will have access
 |     VNPR | [Niu et al.](https://people.engr.tamu.edu/caverlee/pubs/niu18wsdm.pdf) |
 
 ### Our Model
-You may find the scripts for our proposed method [here](https://github.com/sisinflab/Content-Style-VRSs/tree/master/elliot/recommender/proposed). We renamed our model CSV, which stands for *Content-Style Visual* Recommendation.
+You may find the scripts for our proposed method [here](https://github.com/sisinflab/Content-Style-VRSs/tree/master/elliot/recommender/proposed). We renamed our model CSV, which stands for <ins>**C**</ins>ontent-<ins>**S**</ins>tyle <ins>**V**</ins>isual Recommendation.
 
 ## Reproducibility Details
 

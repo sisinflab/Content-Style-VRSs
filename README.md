@@ -105,6 +105,12 @@ You may find the scripts for our proposed method [here](https://github.com/sisin
 
 We randomly initialize the model parameters of all tested methods with a Gaussian distribution with a mean of 0 and standard deviation of 0.01 and set the latent factor dimension to 128 following the experimental settings used in [Chen et al.](https://cseweb.ucsd.edu/classes/fa17/cse291-b/reading/Attentive%20Collaborative%20Filtering%20Multimedia%20Recommendation%20with%20Item-%20and%20Component-Level%20Attention.pdf). We explore the following hyperparameters via grid-search: the learning rate in {0.0001, 0.001, 0.01} and the regularization coefficients in {0.00001, 0.001}, whereas we fix the batch size to 256, and the temperature to 10.0. We adopt early-stopping to avoid overfitting and choose the best model configuration for each algorithm according to the hit ratio (HR), i.e., the validation metric, as in [Chen et al.](https://cseweb.ucsd.edu/classes/fa17/cse291-b/reading/Attentive%20Collaborative%20Filtering%20Multimedia%20Recommendation%20with%20Item-%20and%20Component-Level%20Attention.pdf).
 
+That being said, you may refer to the two configuration files:
+- [Amazon Boys & Girls](https://github.com/sisinflab/Content-Style-VRSs/blob/master/config_files/evaluate_amazon_boys_girls.yml)
+- [Amazon Men](https://github.com/sisinflab/Content-Style-VRSs/blob/master/config_files/evaluate_amazon_men.yml)
+
+to have a detailed overview on all adopted hyperparameters, evaluation settings and files to run the experiments.
+
 ## Contacts
 * Yashar Deldjoo (yashar.deldjoo@poliba.it)
 * Tommaso Di Noia (tommaso.dinoia@poliba.it)

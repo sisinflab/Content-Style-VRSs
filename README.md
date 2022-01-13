@@ -62,7 +62,7 @@ This will train or test all the models on the considered datasets, following the
 
 |       Dataset      |   # Users   | # Items   |  # Interactions   |
 | ------------------ | ------------------ | ------------------ | ------------------ |
-|     Amazon Boys & Girls*     |  1,425 | 5,019 | 9,213  |
+|     [Amazon Boys & Girls](https://politecnicobari-my.sharepoint.com/:u:/g/personal/daniele_malitesta_poliba_it/EY7WwcUQHapLileGGlvW3iYBSCPf-WduNTVS_zc9j_sjTg?e=jm2kR8)*     |  1,425 | 5,019 | 9,213  |
 |    Amazon Men*    | 16,278 | 31,750 |  113,106  |
 
 \* https://jmcauley.ucsd.edu/data/amazon/

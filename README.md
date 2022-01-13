@@ -29,10 +29,28 @@ The codes for the proposed model and the baselines were implemented in **Elliot*
 ## Disclaimer \#2
 We are working to integrate the proposed model within the most recent version of Elliot, so that we can take advantage of all the new introduced features. When this step is complete, we will have this repository directly linking to Elliot.
 
-### Dataset
-At this anonymized [link](https://drive.google.com/file/d/1v1XeDlpYAwod3jfIutD9zS_ct9Q3aTgB/view?usp=sharing) you may find the datasets adopted in the paper. For each item image, we have already provided the extracted visual features required for all visual-based baselines and our proposed model. Please, just put the downloaded datasets into the ```./data/``` folder.
+## Table of Contents
+- [Requirements](#requirements)
+- [Training and Evaluation](#training-and-evaluation)
+- [Datasets](#datasets)
+- [Baselines and Our Method](#our-method)
+- [Reproducibility Details](#reproducibility-details)
+- [Contacts](#contacts)
 
-### Training and evaluating the models
+## Requirements
+
+To begin with, please make sure your system has these installed:
+
+* Python 3.6.8
+* CUDA 10.1
+* cuDNN 7.6.4
+
+Then, install all required Python dependencies with the command:
+```
+pip install -r requirements.txt
+```
+
+## Training and Evaluation
 - For each experiment, please run the following script:
 ```
 python -u sample_main.py --type_experiment [NAME OF EXPERIMENT] --dataset [DATASET NAME]
@@ -44,9 +62,18 @@ where the parameters ```type_experiment``` and ```dataset``` may be set using th
 
 This will train or test all the models on the considered datasets, following the configuration files in ```./config_files/``` (where you can find a detailed overview on all explored values for all the hyperparameters). Note that, the ```type_experiment``` field has to be completed with the name of the configuration file without the dataset name, e.g., if the file is named ```evaluate_amazon_men.yml```, then ```type_experiment: evaluate```. The configuration files ```evaluate_amazon_men.yml``` and ```evaluate_amazon_boys_girls.yml``` allow to reproduce all results.
 
-### Our proposed method
+## Datasets
+At this anonymized [link](https://drive.google.com/file/d/1v1XeDlpYAwod3jfIutD9zS_ct9Q3aTgB/view?usp=sharing) you may find the datasets adopted in the paper. For each item image, we have already provided the extracted visual features required for all visual-based baselines and our proposed model. Please, just put the downloaded datasets into the ```./data/``` folder.
+
+## Baselines and Our Method
 You may find the scripts for our proposed method at the path ```./elliot/recommender/custom/```, while the corresponding data samplers can be found at the path ```./elliot/dataset/dataloaders/```.
 
-### Reproducibility Details
+## Reproducibility Details
 
 We randomly initialize the model parameters of all tested methods with a Gaussian distribution with a mean of 0 and standard deviation of 0.01 and set the latent factor dimension to 128 following the experimental settings used in [Chen et al.](https://cseweb.ucsd.edu/classes/fa17/cse291-b/reading/Attentive%20Collaborative%20Filtering%20Multimedia%20Recommendation%20with%20Item-%20and%20Component-Level%20Attention.pdf). We explore the following hyperparameters via grid-search: the learning rate in {0.0001, 0.001, 0.01} and the regularization coefficients in {0.00001, 0.001}, whereas we fix the batch size to 256, and the temperature to 10.0. We adopt early-stopping to avoid overfitting and choose the best model configuration for each algorithm according to the hit ratio (HR), i.e., the validation metric, as in [Chen et al.](https://cseweb.ucsd.edu/classes/fa17/cse291-b/reading/Attentive%20Collaborative%20Filtering%20Multimedia%20Recommendation%20with%20Item-%20and%20Component-Level%20Attention.pdf).
+
+## Contacts
+* Yashar Deldjoo (yashar.deldjoo@poliba.it)
+* Tommaso Di Noia (tommaso.dinoia@poliba.it)
+* Daniele Malitesta* (daniele.malitesta@poliba.it)
+* Felice Antonio Merra (felice.merra@poliba.it)

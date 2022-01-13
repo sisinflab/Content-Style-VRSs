@@ -9,6 +9,21 @@ This is the official GitHub repository for the paper [**Leveraging Content-Style
 **Authors:** Yashar Deldjoo, Tommaso Di Noia, Daniele Malitesta*, Felice Antonio Merra.
 <br>\**corresponding author*
 
+If you want to use our model as baseline in your paper, please remember to cite our paper:
+
+```
+@ToAppearInProceedings{DDMM22,
+  author       = "Deldjoo, Yashar and Di Noia, Tommaso and Malitesta, Daniele and Merra, Felice Antonio",
+  title        = "Leveraging Content-Style Item Representation for Visual Recommendation",
+  booktitle    = "44th European Conference on Information Retrieval",
+  month        = "apr",
+  year         = "2022",
+  publisher    = "Springer",
+  url          = "http://sisinflab.poliba.it/Publications/2022/DDMM22"
+
+}
+```
+
 ## Disclaimer \#1
 The code for the proposed model and the baselines was implemented in **Elliot**. If you want to reproduce the exact same results described in the paper, please consider this essential version of the framework. However, please, refer to the most updated version of the official [GitHub page](https://github.com/sisinflab/elliot) and the [documentation](https://elliot.readthedocs.io/en/latest/) for detailed information on how to run the framework.
 

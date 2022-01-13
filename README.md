@@ -71,7 +71,7 @@ This will train or test all the models on the considered datasets, following the
 
 \* https://jmcauley.ucsd.edu/data/amazon/
 
-The two adopted datasets are sub-categories of Amazon's product category *Clothing, Shoes and Jewelry*. We used the 2014 version (refer to the official link above). As for the filtering phase, we considered only the interactions recorded after 2010, and filtered out items and users with less than 5 interactions (applying the 5-core techniques on items and on users).
+The two adopted datasets are sub-categories of Amazon's product category *Clothing, Shoes and Jewelry*. We used the 2014 version (refer to the official link above). As for the filtering phase, we considered only the interactions recorded after 2010, and filtered out items and users with less than 5 interactions (applying the 5-core techniques on items and users). Finally, we applied the temporal leave-one-out to split the dataset into train, validation, and test sets as described in the paper.
 
 After downloading the zip files pointed by the table links, you will have access to the following data:
 

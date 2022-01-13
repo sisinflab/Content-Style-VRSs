@@ -9,10 +9,11 @@ This is the official GitHub repository for the paper [**Leveraging Content-Style
 **Authors:** Yashar Deldjoo, Tommaso Di Noia, Daniele Malitesta*, Felice Antonio Merra.
 <br>\**corresponding author*
 
-The proposed implementation extends the Python framework **Elliot**. While you can refer to the official [GitHub page](https://github.com/sisinflab/elliot) and the [documentation](https://elliot.readthedocs.io/en/latest/) for detailed information on how to run the framework, please use the scripts from the extended version here to reproduce all the results shown in the paper (both for the proposed model and the baselines). 
+## Disclaimer \#1
+The code for the proposed model and the baselines was implemented in of **Elliot**. If you want to reproduce the exact same results described in the paper, please consider this essential version of Elliot. However, please, refer to the most updated version of the official [GitHub page](https://github.com/sisinflab/elliot) and the [documentation](https://elliot.readthedocs.io/en/latest/) for detailed information on how to run the framework.
 
-## Some useful notes
-It being understood that you should refer to Elliot's documentation and GitHub page to run the experiments, please consider the following additional details to properly execute the scripts from this version.
+## Disclaimer \#2
+We are working to implement the proposed model within the most recent version of Elliot so that we can take advantage of all the new introduced features. When this happens, we will remove every script from here, and directly link to Elliot.
 
 ### Dataset
 At this anonymized [link](https://drive.google.com/file/d/1v1XeDlpYAwod3jfIutD9zS_ct9Q3aTgB/view?usp=sharing) you may find the datasets adopted in the paper. For each item image, we have already provided the extracted visual features required for all visual-based baselines and our proposed model. Please, just put the downloaded datasets into the ```./data/``` folder.

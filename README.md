@@ -82,6 +82,8 @@ After downloading the zip files pointed by the table links, you will have access
 
 **Disclaimer.** As we do not own the dataset, we decided not to release the original product images (you would need them to train DVBPR, or to extract each of the visual features). Once again, we encourage you refer to the [official link](https://jmcauley.ucsd.edu/data/amazon/) to get to the full dataset, and use the item mapping we provided to download again the original product images, if needed.
 
+**Visual Features.** All visual features were extracted using the scripts accessible at [this repository](https://github.com/sisinflab/Multimodal-Feature-Extractor). The repository is maintained by our research group, and its purpose is to provide a comprehensive framework to extract both handcrafted and trainable features from multimedia data, e.g., images and texts. Please, feel free to join us and contribute to it, since its developing is still open and highly active!
+
 ## Baselines and Our Method
 
 ### Traditional Collaborative Filtering

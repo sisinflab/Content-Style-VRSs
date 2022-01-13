@@ -1,1 +1,0 @@
-from .kahfm_embeddings import KaHFMEmbeddings

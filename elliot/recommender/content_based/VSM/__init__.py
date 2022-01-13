@@ -1,1 +1,0 @@
-from .vector_space_model import VSM

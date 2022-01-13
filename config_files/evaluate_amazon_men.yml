@@ -43,7 +43,7 @@ experiment:
       batch_eval: 1024
       l_w: [ 0.00001, 0.001 ]
       l_b: 0
-    FashionExpl:
+    CSV:
       meta:
         hyper_opt_alg: grid
         validation_rate: 1

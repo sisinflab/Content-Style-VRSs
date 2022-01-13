@@ -51,16 +51,12 @@ pip install -r requirements.txt
 ```
 
 ## Training and Evaluation
-- For each experiment, please run the following script:
+For each experiment, please run the following script:
 ```
-python -u sample_main.py --type_experiment [NAME OF EXPERIMENT] --dataset [DATASET NAME]
+python start_experiment.py --config <configuration_filename_without_extension>
 ```
-where the parameters ```type_experiment``` and ```dataset``` may be set using these values:
 
-- ```type_experiment: SEE EXAMPLE BELOW```
-- ```dataset: {amazon_men, amazon_boys_girls}```
-
-This will train or test all the models on the considered datasets, following the configuration files in ```./config_files/``` (where you can find a detailed overview on all explored values for all the hyperparameters). Note that, the ```type_experiment``` field has to be completed with the name of the configuration file without the dataset name, e.g., if the file is named ```evaluate_amazon_men.yml```, then ```type_experiment: evaluate```. The configuration files ```evaluate_amazon_men.yml``` and ```evaluate_amazon_boys_girls.yml``` allow to reproduce all results.
+This will train or test all the models on the considered datasets, following the configuration files in ```./config_files/``` (where you can find a detailed overview on all explored values for all the hyperparameters).
 
 ## Datasets
 

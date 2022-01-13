@@ -84,16 +84,14 @@ After downloading the zip files pointed by the table links, you will have access
 
 ## Baselines and Our Method
 
-**Traditional Collaborative Filtering**
-
+### Traditional Collaborative Filtering
 |       Model      |    Paper  |
 | ------------------ | ------------------ |
 |     BPRMF     | [Rendle et al.](https://arxiv.org/pdf/1205.2618.pdf) |
 |     NeuMF   | [He et al.](https://arxiv.org/pdf/1708.05031.pdf) |
 
 
-**Visual-Based Collaborative Filtering**
-
+### Visual-Based Collaborative Filtering
 |       Model      |    Paper  |
 | ------------------ | ------------------ |
 |     VBPR     | [He and McAuley](https://arxiv.org/pdf/1510.01784.pdf) |
@@ -102,7 +100,8 @@ After downloading the zip files pointed by the table links, you will have access
 |     ACF | [Chen et al.](https://www.comp.nus.edu.sg/~xiangnan/papers/sigir17-AttentiveCF.pdf) | 
 |     VNPR | [Niu et al.](https://people.engr.tamu.edu/caverlee/pubs/niu18wsdm.pdf) |
 
-You may find the scripts for our proposed method at the path ```./elliot/recommender/custom/```, while the corresponding data samplers can be found at the path ```./elliot/dataset/dataloaders/```.
+### Our Model
+You may find the scripts for our proposed method [here](https://github.com/sisinflab/Content-Style-VRSs/tree/master/elliot/recommender/custom).
 
 ## Reproducibility Details
 

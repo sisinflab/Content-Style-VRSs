@@ -12,14 +12,18 @@ This is the official GitHub repository for the paper [**Leveraging Content-Style
 If you want to use our model as baseline in your paper, please remember to cite us:
 
 ```
-@misc{DDMM22,
-  author       = "Deldjoo, Yashar and Di Noia, Tommaso and Malitesta, Daniele and Merra, Felice Antonio",
-  title        = "Leveraging Content-Style Item Representation for Visual Recommendation",
-  booktitle    = "44th European Conference on Information Retrieval",
-  month        = "apr",
-  year         = "2022",
-  publisher    = "Springer",
-  url          = "http://sisinflab.poliba.it/Publications/2022/DDMM22"
+@inproceedings{DBLP:conf/ecir/DeldjooNMM22,
+  author    = {Yashar Deldjoo and
+               Tommaso {Di Noia} and
+               Daniele Malitesta and
+               Felice Antonio Merra},
+  title     = {Leveraging Content-Style Item Representation for Visual Recommendation},
+  booktitle = {{ECIR} {(2)}},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {13186},
+  pages     = {84--92},
+  publisher = {Springer},
+  year      = {2022}
 }
 ```
 
